@@ -1,10 +1,10 @@
 import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { BaseService } from "src/common/BaseService";
+import { BaseService } from "../../common/BaseService";
 import { UserRoleRepository } from "./user-role.repository";
-import { RecordNotFoundException } from "src/common/exceptions/systemErrors.exceptions";
-import { VALIDATION_ERROR_MESSAGES } from "src/common/constants/app.utils";
-import { QueryConfig } from "src/common/type.definitions";
+import { RecordNotFoundException } from "../../common/exceptions/systemErrors.exceptions";
+import { VALIDATION_ERROR_MESSAGES } from "../../common/constants/app.utils";
+import { QueryConfig } from "../../common/type.definitions";
 import { UserRole } from "./dto/user-role.entity";
 import { CreateUserRoleDto } from "./dto/user-role.dto";
 

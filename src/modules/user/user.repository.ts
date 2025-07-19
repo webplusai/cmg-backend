@@ -4,8 +4,8 @@ import {
   AdminCreateUserRequestDto,
   UserRegisterRequestDto,
 } from "./dto/user.dto";
-import { ForbiddenException } from "src/common/exceptions/systemErrors.exceptions";
-import { CustomRepository } from "src/database/typeorm-ex.decorator";
+import { ForbiddenException } from "../../common/exceptions/systemErrors.exceptions";
+import { CustomRepository } from "../../database/typeorm-ex.decorator";
 
 @CustomRepository(User)
 export class UserRepository extends Repository<User> {

@@ -15,8 +15,8 @@ import {
   REGEX,
   USER_ROLES,
   VALIDATION_ERROR_MESSAGES,
-} from "src/common/constants/app.utils";
-import { AllowedRegRolesValidator } from "src/common/validators";
+} from "../../../common/constants/app.utils";
+import { AllowedRegRolesValidator } from "../../../common/validators";
 
 export class UserDto {
   @ApiProperty({

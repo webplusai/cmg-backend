@@ -1,8 +1,8 @@
 import { PassportStrategy } from "@nestjs/passport";
 import { InjectRepository } from "@nestjs/typeorm";
 import { ExtractJwt, Strategy } from "passport-jwt";
-import { BadRequestException } from "src/common/exceptions/systemErrors.exceptions";
-import appConfig from "src/config/app.config";
+import { BadRequestException } from "../../common/exceptions/systemErrors.exceptions";
+import appConfig from "../../config/app.config";
 import { RolesService } from "../roles/roles.service";
 import { UserRoleRepository } from "../user-role/user-role.repository";
 

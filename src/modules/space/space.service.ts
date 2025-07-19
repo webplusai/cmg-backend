@@ -4,10 +4,10 @@ import { LessThanOrEqual, MoreThanOrEqual, Repository } from "typeorm";
 import * as fs from 'fs';
 import * as fastCsv from 'fast-csv';
 import axios from "axios"
-import { QueryConfig } from "src/common/type.definitions";
+import { QueryConfig } from "../../common/type.definitions";
 import { Space } from "./dto/space.entity";
-import { RecordNotFoundException } from "src/common/exceptions/systemErrors.exceptions";
-import { VALIDATION_ERROR_MESSAGES } from "src/common/constants/app.utils";
+import { RecordNotFoundException } from "../../common/exceptions/systemErrors.exceptions";
+import { VALIDATION_ERROR_MESSAGES } from "../../common/constants/app.utils";
 import { SpaceDto } from "./dto/space.dto";
 import { FileUploadService } from "../file-upload/file-upload.service";
 import { Reservation } from "../reservation/dto/reservation.entity";

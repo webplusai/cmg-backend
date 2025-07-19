@@ -2,7 +2,7 @@ import { Module } from "@nestjs/common";
 import { UserController } from "./user.controller";
 import { UserService } from "./user.service";
 import { UserRepository } from "./user.repository";
-import { TypeOrmExModule } from "src/database/typeorm-ex.module";
+import { TypeOrmExModule } from "../../database/typeorm-ex.module";
 import { UserRoleModule } from "../user-role/user-role.module";
 import { RolesModule } from "../roles/roles.module";
 

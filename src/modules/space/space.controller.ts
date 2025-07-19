@@ -18,7 +18,7 @@ import { Space } from "./dto/space.entity";
 import { SpaceService } from "./space.service";
 import { JwtAuthGuard } from "../auth/jwt-auth.guard";
 import { Roles } from "../auth/roles.decorator";
-import { USER_ROLES } from "src/common/constants/app.utils";
+import { USER_ROLES } from "../../common/constants/app.utils";
 import { Pagination } from "nestjs-typeorm-paginate";
 import { query } from "express";
 

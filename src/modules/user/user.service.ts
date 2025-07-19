@@ -5,15 +5,15 @@ import {
   Pagination,
   paginate,
 } from "nestjs-typeorm-paginate";
-import { BaseService } from "src/common/BaseService";
+import { BaseService } from "../../common/BaseService";
 import {
   BadRequestException,
   RecordNotFoundException,
-} from "src/common/exceptions/systemErrors.exceptions";
+} from "../../common/exceptions/systemErrors.exceptions";
 import {
   GetUserRecordsRequestDto,
   QueryConfig,
-} from "src/common/type.definitions";
+} from "../../common/type.definitions";
 import { Role } from "../roles/dto/role.entity";
 import { UserRole } from "../user-role/dto/user-role.entity";
 import {
@@ -28,7 +28,7 @@ import { UserRoleService } from "../user-role/user-role.service";
 import {
   USER_ROLES,
   VALIDATION_ERROR_MESSAGES,
-} from "src/common/constants/app.utils";
+} from "../../common/constants/app.utils";
 import { Request } from "express";
 
 @Injectable()

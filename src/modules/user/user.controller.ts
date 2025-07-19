@@ -19,9 +19,9 @@ import {
   ApiTags,
 } from "@nestjs/swagger";
 import { Pagination } from "nestjs-typeorm-paginate";
-import { APP_SETTINGS, USER_ROLES } from "src/common/constants/app.utils";
-import { ApiPaginatedResponse } from "src/common/decorators/api-paginated-response";
-import { GetUserRecordsRequestDto } from "src/common/type.definitions";
+import { APP_SETTINGS, USER_ROLES } from "../../common/constants/app.utils";
+import { ApiPaginatedResponse } from "../../common/decorators/api-paginated-response";
+import { GetUserRecordsRequestDto } from "../../common/type.definitions";
 import { JwtAuthGuard } from "../auth/jwt-auth.guard";
 import { Roles } from "../auth/roles.decorator";
 import { RolesGuard } from "../auth/roles.guard";

@@ -17,7 +17,7 @@ import { Reservation } from "./dto/reservation.entity";
 import { ReservationService } from "./reservation.service";
 import { JwtAuthGuard } from "../auth/jwt-auth.guard";
 import { Roles } from "../auth/roles.decorator";
-import { USER_ROLES } from "src/common/constants/app.utils";
+import { USER_ROLES } from "../../common/constants/app.utils";
 
 @Controller("reservations")
 export class ReservationController {

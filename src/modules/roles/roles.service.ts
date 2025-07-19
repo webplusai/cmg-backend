@@ -1,11 +1,11 @@
 import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { RoleRepository } from "./role.repository";
-import { QueryConfig } from "src/common/type.definitions";
-import { BaseService } from "src/common/BaseService";
+import { QueryConfig } from "../../common/type.definitions";
+import { BaseService } from "../../common/BaseService";
 import { Role } from "./dto/role.entity";
-import { RecordNotFoundException } from "src/common/exceptions/systemErrors.exceptions";
-import { VALIDATION_ERROR_MESSAGES } from "src/common/constants/app.utils";
+import { RecordNotFoundException } from "../../common/exceptions/systemErrors.exceptions";
+import { VALIDATION_ERROR_MESSAGES } from "../../common/constants/app.utils";
 
 @Injectable()
 export class RolesService extends BaseService {

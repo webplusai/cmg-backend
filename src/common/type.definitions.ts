@@ -1,5 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { User } from "src/modules/user/dto/user.entity";
+import { User } from "../modules/user/dto/user.entity";
 import { FindOptionsWhere } from "typeorm";
 
 export class PaginationResponse {

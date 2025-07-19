@@ -1,11 +1,11 @@
 import { Injectable } from "@nestjs/common";
 import { JwtService } from "@nestjs/jwt";
 import * as bcrypt from "bcrypt";
-import { VALIDATION_ERROR_MESSAGES } from "src/common/constants/app.utils";
+import { VALIDATION_ERROR_MESSAGES } from "../../common/constants/app.utils";
 import {
   BadRequestException,
   UnauthorizedException,
-} from "src/common/exceptions/systemErrors.exceptions";
+} from "../../common/exceptions/systemErrors.exceptions";
 import { RolesService } from "../roles/roles.service";
 import { UserRoleService } from "../user-role/user-role.service";
 import { UserRegisterRequestDto } from "../user/dto/user.dto";

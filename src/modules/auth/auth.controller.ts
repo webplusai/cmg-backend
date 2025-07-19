@@ -1,7 +1,7 @@
 import { Body, Controller, Post, Request, UseGuards } from "@nestjs/common";
 import { ApiTags } from "@nestjs/swagger";
 import { validate } from "class-validator";
-import { APP_SETTINGS } from "src/common/constants/app.utils";
+import { APP_SETTINGS } from "../../common/constants/app.utils";
 import { UserRegisterRequestDto } from "../user/dto/user.dto";
 import { UserService } from "../user/user.service";
 import { AuthService } from "./auth.service";
