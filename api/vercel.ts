@@ -28,8 +28,8 @@ async function bootstrap() {
 
   app.enableCors();
 
-  // await app.listen(port || 3000);
-  await app.init();
+  await app.listen(port || 3000);
+  // await app.init();
 }
 
 bootstrap();
