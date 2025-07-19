@@ -25,6 +25,7 @@ export const typeOrmAsyncConfig: TypeOrmModuleAsyncOptions = {
       migrations: [__dirname + "/../migrations/*.{js,ts}"],
       extra: {
         charset: "utf8mb4_unicode_ci",
+        connectionTimeoutMillis: 180000
       },
       synchronize: process.env.DB_SYNC === "true",
       logging: process.env.SHOULD_LOG === "true",
