@@ -7,6 +7,7 @@ import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import { ValidationPipe } from "@nestjs/common";
 import express from 'express';
 import serverlessExpress from '@vendia/serverless-express';
+import 'tsconfig-paths/register';
 
 const expressApp = express();
 
