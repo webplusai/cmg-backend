@@ -5,7 +5,7 @@ import { ExpressAdapter } from '@nestjs/platform-express';
 import { AppModule } from "../src/app.module";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import { ValidationPipe } from "@nestjs/common";
-import * as express from 'express';
+import express from 'express';
 import serverlessExpress from '@vendia/serverless-express';
 
 const expressApp = express();
