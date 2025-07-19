@@ -2,7 +2,7 @@ import { ConfigService } from "@nestjs/config";
 import { NestFactory } from "@nestjs/core";
 import { Handler, Context, Callback } from 'aws-lambda';
 import { ExpressAdapter } from '@nestjs/platform-express';
-import { AppModule } from "./src/app.module";
+import { AppModule } from "../src/app.module";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import { ValidationPipe } from "@nestjs/common";
 import * as express from 'express';
