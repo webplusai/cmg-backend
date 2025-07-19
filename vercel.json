@@ -1,0 +1,10 @@
+{
+    "functions": {
+        "api/vercel.ts": {
+        "runtime": "nodejs22.x"
+        }
+    },
+    "builds": [
+        { "src": "api/vercel.ts", "use": "@vercel/node" }
+    ]
+}
