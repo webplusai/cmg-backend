@@ -4,6 +4,12 @@ import {
   TypeOrmModuleOptions,
 } from "@nestjs/typeorm";
 
+console.log('DB_HOST TypeORM: ', process.env.DB_HOST);
+console.log('DB_PORT TypeORM: ', process.env.DB_PORT);
+console.log('DB_USER TypeORM: ', process.env.DB_USER);
+console.log('DB_PASSWORD TypeORM: ', process.env.DB_PASSWORD);
+console.log('DB_NAME TypeORM: ', process.env.DB_NAME);
+
 export const typeOrmAsyncConfig: TypeOrmModuleAsyncOptions = {
   imports: [ConfigModule],
   inject: [ConfigService],
